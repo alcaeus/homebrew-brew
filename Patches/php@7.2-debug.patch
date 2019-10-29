@@ -1,0 +1,40 @@
+diff --git a/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/php@7.2.rb b/Formula/php@7.2-debug.rb
+index f68c0c9..db71bb7 100644
+--- a/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/php@7.2.rb
++++ b/Formula/php@7.2-debug.rb
+@@ -1,15 +1,9 @@
+class PhpAT72PhpAT72Debug < Formula
+  desc "General-purpose scripting language"
+  homepage "https://www.php.net/"
+  url "https://www.php.net/distributions/php-7.2.24.tar.xz"
+  sha256 "a6a6cc03388060aa5f8f9e45799b72bce1c7ed7b9d7b3f1187787202aad91d25"
+
+  bottle do
+    sha256 "bac76357c733ebd8b1a868186e8e010df40aca599c5ddf11ce13f72f6da4ea1f" => :catalina
+    sha256 "355718067c034e9d0638c2e75b93eed85c7a0300ca484c45d6c6c86dc66f315f" => :mojave
+    sha256 "ca5b16131d65250a51c901b377ea9002f64c896b7640b86719158e6e7b547ddb" => :high_sierra
+  end
+
+  keg_only :versioned_formula
+
+  depends_on "httpd" => [:build, :test]
+@@ -98,9 +92,11 @@ class PhpAT72 < Formula
+      --with-config-file-path=#{config_path}
+      --with-config-file-scan-dir=#{config_path}/conf.d
+      --with-pear=#{pkgshare}/pear
+      --disable-cgi
+      --enable-bcmath
+      --enable-calendar
+      --enable-dba
+      --enable-debug
+      --enable-dtrace
+      --enable-exif
+      --enable-ftp
+@@ -282,7 +278,7 @@ class PhpAT72 < Formula
+  end
+
+  def php_version
+    version.to_s.split(".")[0..1].join(".") + "-debug"
+  end
+
+  plist_options :manual => "php-fpm"

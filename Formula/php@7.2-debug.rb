@@ -1,8 +1,8 @@
 class PhpAT72Debug < Formula
   desc "General-purpose scripting language"
   homepage "https://www.php.net/"
-  url "https://www.php.net/distributions/php-7.2.25.tar.xz"
-  sha256 "746efeedc38e6ff7b1ec1432440f5fa801537adf6cd21e4afb3f040e5b0760a9"
+  url "https://www.php.net/distributions/php-7.2.29.tar.xz"
+  sha256 "b117de74136bf4b439d663be9cf0c8e06a260c1f340f6b75ccadb609153a7fe8"
 
   keg_only :versioned_formula
 

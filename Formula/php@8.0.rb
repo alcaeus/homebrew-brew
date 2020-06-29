@@ -1,9 +1,15 @@
 class PhpAT80 < Formula
   desc "General-purpose scripting language"
   homepage "https://www.php.net/"
-  head "https://github.com/php/php-src.git"
+  # Should only be updated if the new version is announced on the homepage, https://www.php.net/
+  url "https://downloads.php.net/~pollita/php-8.0.0alpha1.tar.xz"
+  sha256 "2ab527b3b96908b123271ee390ea01169effeb5027a7f85dbe4d0d37d7da1628"
 
   keg_only :versioned_formula
+
+  head do
+    url "https://github.com/php/php-src.git"
+  end
 
   depends_on "httpd" => [:build, :test]
   depends_on "pkg-config" => :build

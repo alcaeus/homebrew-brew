@@ -1,9 +1,9 @@
 class M < Formula
   desc "Helps you download, use, and manage multiple versions of the MongoDB server and command-line tools"
   homepage "https://github.com/aheckmann/m"
-  url "https://raw.githubusercontent.com/aheckmann/m/1.5.6/bin/m"
-  version "1.5.6"
-  sha256 "a23de33ce8a0ad1cb83e93d5a02cf76f70eef6b107adf287a149df1e0ecc521b"
+  url "https://raw.githubusercontent.com/aheckmann/m/1.6.0/bin/m"
+  version "1.6.0"
+  sha256 "7b21ca57f2d7442abc18827f3ad2308258fc8cbc06e234bfd98ea7a458ff5e66"
 
   bottle :unneeded
 

@@ -1,14 +1,12 @@
-class PhpAT81 < Formula
+class PhpAT82 < Formula
   desc "General-purpose scripting language"
   homepage "https://www.php.net/"
-  url "https://downloads.php.net/~patrickallaert/php-8.1.0RC5.tar.xz"
-  sha256 "322258717bed388567bf3637fd8921aa197cde57bb74fb5c020517165e6812b8"
   license "PHP-3.01"
 
   keg_only :versioned_formula
 
   head do
-    url "https://github.com/php/php-src.git", branch: "PHP-8.1"
+    url "https://github.com/php/php-src.git"
 
     depends_on "bison" => :build # bison >= 3.0.0 required to generate parsers
     depends_on "re2c" => :build # required to generate PHP lexers

@@ -1,8 +1,8 @@
 class PhpAT81 < Formula
   desc "General-purpose scripting language"
   homepage "https://www.php.net/"
-  url "https://downloads.php.net/~patrickallaert/php-8.1.0RC5.tar.xz"
-  sha256 "322258717bed388567bf3637fd8921aa197cde57bb74fb5c020517165e6812b8"
+  url "https://downloads.php.net/~ramsey/php-8.1.0RC6.tar.xz"
+  sha256 "e7273a019aec824fd98e8f8ab071e7a2a37e681cc788a63c3092765dca479268"
   license "PHP-3.01"
 
   keg_only :versioned_formula
